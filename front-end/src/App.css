@@ -1,0 +1,19 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navigation-bar {
+    flex-shrink: 0; /* Prevent the navigation bar from shrinking */
+    z-index: 30;
+    /* Other navigation bar styles */
+  }
+  
+  .home-carousel {
+    flex-grow: 1; /* Allow the home carousel to grow and take remaining height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: calc(100vh - 60px); /* Adjust the max-height based on your navigation bar height */
+    /* Other home carousel styles */
+  }
+  
